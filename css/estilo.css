@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,.2);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+}
+
+.enlaces-header {
+    font-weight: 300;
+    margin: auto;
+}
+
+.nav .enlaces-header a {
+    color: #5d6678;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.nav .enlaces-header a:hover {
+    color: #fff;
+    background-color: #ed9f0d;
+    border-color: lightgray;
+    transition: all ease-in-out .4s;
+}
+
+.titulospro {
+    text-align: left;
+    margin: 60px 0;
+}
+
+.contenido-header {
+    width: 80%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contenido-header > img {
+    width: 300px;
+    height: 300px;
+    margin-left: 35px;
+    animation: ease-in animacion 0.5s;
+    border-radius: 50%; 
+}
+
+
+.textos-header {
+    margin: 0 0 0 30px;
+}
+
+.contenido-header P {
+    font-weight: 300;
+    margin-top: 14px;
+    color: #5d6678;
+    text-align: justify;
+}
+
+@keyframes animacion {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+.contenido-header a {
+    margin: 28px 0 0 0;
+    width: 150px;
+    display: inline-block;
+    background-color: #5d6678;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    box-shadow: 0 8px 32px rgba(97, 31, 31, 0.46);
+}
+
+
+
+/*#################################### EDUCATION ################################################*/
+
+.section-education{
+    background-color: #5d6678;
+}
+
+.section-education .Title{
+    display: block;
+    margin: 15px 0;
+    width: 100%;
+    text-align:center ;
+    text-transform: uppercase;
+}
+
+.content-education{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+
+.education {
+    width: 30%;
+    border-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    background-color: whitesmoke;
+}
+
+.education i{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: gray;
+    color:antiquewhite;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 36px;
+}
+
+.education:hover{
+    background-color: rgb(243, 240, 90);
+    box-shadow: 0 0 8px gray;
+    transition: all ease-in-out .4s;
+}
+
+.content-education .education a {
+    color: gray;
+    font-size: 12px;
+    text-decoration: none;
+
+}
+
+.content-education .education a:hover{
+    color: rgb(108, 104, 105);
+    transition: all ease-in-out .3s;
+}
+
+/*##################################### CERTIFICADOS #################################################*/
+.categories{
+    display: block;
+    margin: 15px 0 0 0;
+    width: 100%;
+    text-align:center ;
+    text-transform: uppercase;
+}
+
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+
+.categories-musica{
+    width: 22%;
+    border-radius: 5px;
+    border: 2px solid gray;
+    padding: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.categories img{
+    height: 80px;
+    width: auto;
+}
+
+.certificates a{
+    font-size: 12px;
+    color: gray;
+    text-decoration: none;
+}
+
+.certificates:hover{
+    background-color: #5d6678;
+    box-shadow: 0 0 8px gray;
+    transition: all ease-in-out .6s;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.certificates a:hover{
+    color: aliceblue;
+}
+/*#################################### PIE DE PAGINA ################################################*/
+
+footer{
+    background-color: rgb(70,70, 70);
+    padding: 50px 0 20px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    
+}
+
+.partFooter {
+    width: 22%;
+    text-align: center;
+}
+
+.partFooter img {
+    width: 60%;
+    border-radius: 50%;
+    
+}
+
+.partFooter h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400px;
+    margin-bottom: 15px;
+    background-color: #5d6678;
+    padding: 5px 0px;
+    border: 1px solid #5d6678 ;
+    border-radius: 5px;
+}
+
+.contact {
+    margin: 10px;
+    display: block;
+    text-align: left;
+}
+
+.contact > i {
+    float: left;
+    margin: 0 0 0 10px;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    height: 30px;
+    width: 30px;
+    line-height:  28px;
+    text-align: center;
+    align-items: center;
+}
+
+.contact > p {
+    margin-left: 50px;
+    align-items: center;
+    line-height: 28px;
+    font-weight: 500;
+    color: #fff;
+
+}
+
+.partFooter > a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.partFooter > a:hover {
+    background-color: #5d6678;
+    border-color: #5d6678;
+    border-radius: 5px;
+    transition: all ease-in-out .6s;
+}
+
+.social-media > a > i {
+    font-size: 20px;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .6s;
+    margin-right: 5px;
+    border-radius: 50%
+}
+
+.social-media > a > i:hover {
+    background-color:rgba(97, 31, 31, 0.46);
+    border-color: rgba(97, 31, 31, 0.46);
+}
