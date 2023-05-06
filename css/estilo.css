@@ -1,12 +1,19 @@
+.color1 {color: #b4919b;}
+.color2 {color: #c8a499;}
+.color3 {color: #cabba5;}
+.color4 {color: #e3e7d5;}
+.color5 {color: #f4f9f8;}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: antiquewhite;
+    
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #c8a499;
 }
 
 h1 {
@@ -29,7 +36,7 @@ header::before {
 nav {
     width: 100%;
     height: 80px;
-    background: #fff;
+    background: #cabba5;
     border-bottom: 1px solid transparent;
     box-shadow: 1px 1px 10px 0 rgba(0,0,0,.2);
     position: fixed;
@@ -42,11 +49,13 @@ nav {
     height: 80px;
     width: 100%;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .enlaces-header {
     font-weight: 300;
     margin: auto;
+    justify-content: space-evenly;
 }
 
 .nav .enlaces-header a {
@@ -55,19 +64,18 @@ nav {
     margin-left: 20px;
     padding: 12px;
     border-radius: 10px;
+    width: 20px;
+    height: 30px;
 }
 
 .nav .enlaces-header a:hover {
     color: #fff;
-    background-color: #ed9f0d;
+    background-color: #8d7f6c;
     border-color: lightgray;
     transition: all ease-in-out .4s;
 }
 
-.titulospro {
-    text-align: left;
-    margin: 60px 0;
-}
+
 
 .contenido-header {
     width: 80%;
@@ -77,6 +85,7 @@ nav {
     align-items: center;
     text-align: center;
     margin: 0 auto;
+    
 }
 
 .contenido-header > img {
@@ -85,6 +94,7 @@ nav {
     margin-left: 35px;
     animation: ease-in animacion 0.5s;
     border-radius: 50%; 
+    
 }
 
 
@@ -92,11 +102,21 @@ nav {
     margin: 0 0 0 30px;
 }
 
-.contenido-header P {
+.contenido-header h1 {
     font-weight: 300;
-    margin-top: 14px;
+    margin: 0px 0px 70px 0px;
     color: #5d6678;
-    text-align: justify;
+    align-items: center;
+    justify-content: start;
+}
+
+.contenido-header h2 {
+    margin-top: 30px;
+}
+
+.contenido-header h3{
+    font-weight: 500;
+    
 }
 
 @keyframes animacion {
@@ -124,64 +144,9 @@ nav {
 
 /*#################################### EDUCATION ################################################*/
 
-.section-education{
-    background-color: #5d6678;
-}
 
-.section-education .Title{
-    display: block;
-    margin: 15px 0;
-    width: 100%;
-    text-align:center ;
-    text-transform: uppercase;
-}
 
-.content-education{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-bottom: 30px;
-}
-
-.education {
-    width: 30%;
-    border-color: #fff;
-    border-radius: 8px;
-    padding: 30px;
-    background-color: whitesmoke;
-}
-
-.education i{
-    border: 2px solid #fff;
-    border-radius: 50%;
-    background-color: gray;
-    color:antiquewhite;
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-    text-align: center;
-    line-height: 36px;
-}
-
-.education:hover{
-    background-color: rgb(243, 240, 90);
-    box-shadow: 0 0 8px gray;
-    transition: all ease-in-out .4s;
-}
-
-.content-education .education a {
-    color: gray;
-    font-size: 12px;
-    text-decoration: none;
-
-}
-
-.content-education .education a:hover{
-    color: rgb(108, 104, 105);
-    transition: all ease-in-out .3s;
-}
-
-/*##################################### CERTIFICADOS #################################################*/
+/*##################################### CATEGORIES #################################################*/
 .categories{
     display: block;
     margin: 15px 0 0 0;
@@ -197,6 +162,7 @@ nav {
     padding-bottom: 30px;
 }
 
+
 .categories-musica{
     width: 22%;
     border-radius: 5px;
@@ -204,30 +170,27 @@ nav {
     padding: 15px;
     text-align: center;
     margin-top: 15px;
+    background-color: #fff;
 }
 
 .categories img{
-    height: 80px;
-    width: auto;
+    height: 100px;
+    width: 150px;
 }
 
-.certificates a{
-    font-size: 12px;
-    color: gray;
-    text-decoration: none;
-}
 
-.certificates:hover{
+.categories-musica:hover{
     background-color: #5d6678;
-    box-shadow: 0 0 8px gray;
-    transition: all ease-in-out .6s;
+    box-shadow: 0 0 8px #cabba5;
+    transition: all ease-in-out .5s;
     color: #fff;
     transform: scale(1.1);
 }
 
-.certificates a:hover{
-    color: aliceblue;
+.categories-musica a{
+    color: black;
 }
+
 /*#################################### PIE DE PAGINA ################################################*/
 
 footer{
