@@ -88,15 +88,16 @@ nav {
     
 }
 
-.contenido-header > img {
-    width: 300px;
-    height: 300px;
-    margin-left: 35px;
-    animation: ease-in animacion 0.5s;
-    border-radius: 50%; 
-    
-}
+.introduccion h3 {
+    font-weight: 400;
+    align-items: center;
+    justify-content: start;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 70px;
+    line-height: 30px;  
 
+}
 
 .textos-header {
     margin: 0 0 0 30px;
@@ -104,7 +105,7 @@ nav {
 
 .contenido-header h1 {
     font-weight: 300;
-    margin: 0px 0px 70px 0px;
+    margin: -40px 0px 70px 0px;
     color: #5d6678;
     align-items: center;
     justify-content: start;
@@ -209,11 +210,7 @@ footer{
     text-align: center;
 }
 
-.partFooter img {
-    width: 60%;
-    border-radius: 50%;
-    
-}
+
 
 .partFooter h4 {
     color: #fff;
